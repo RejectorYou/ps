@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>fdt.kml</name>
+	<StyleMap id="msn_square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_square</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_square">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_square">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>FDT</name>
+		<open>1</open>
+		<Placemark>
+			<name>FPSO01F27</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>107.5736825892179</longitude>
+				<latitude>-7.013107547065331</latitude>
+				<altitude>0</altitude>
+				<heading>3.170026606869543e-05</heading>
+				<tilt>0.05410361411268642</tilt>
+				<range>104.9346336872789</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5735795674912,-7.013101683152211,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
