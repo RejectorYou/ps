@@ -3,6 +3,7 @@
 <Document>
 	<name>Tagging</name>
 	<description>22/08/2024</description>
+	<gx:balloonVisibility>1</gx:balloonVisibility>
 	<Schema name="hptag" id="S_hptag_DDS">
 		<SimpleField type="double" name="long"><displayName>&lt;b&gt;long&lt;/b&gt;</displayName>
 </SimpleField>
@@ -13,6 +14,7 @@
 	</Schema>
 	<Style id="hlightPointStyle">
 		<IconStyle>
+			<scale>1.2</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
 			</Icon>
@@ -25,9 +27,62 @@
 </table>
 ]]></text>
 		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
+	<StyleMap id="msn_P">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_P</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_P</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_square</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_triangle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_triangle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_triangle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_triangle0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_triangle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_triangle0</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="normPointStyle">
 		<IconStyle>
+			<scale>1.2</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
 			</Icon>
@@ -40,6 +95,8 @@
 </table>
 ]]></text>
 		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
 	<StyleMap id="pointStyleMap">
 		<Pair>
@@ -51,26 +108,153 @@
 			<styleUrl>#hlightPointStyle</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sh_P">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_square">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_triangle">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_triangle0">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_P">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_square">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_triangle">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_triangle0">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
 	<Folder id="layer 0">
 		<name>HOMEPASS</name>
-		<open>1</open>
 		<Placemark>
 			<name>NN-001</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -85,20 +269,6 @@
 		<Placemark>
 			<name>NN-002</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -113,20 +283,6 @@
 		<Placemark>
 			<name>NN-003</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -141,20 +297,6 @@
 		<Placemark>
 			<name>NN-004</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -169,20 +311,6 @@
 		<Placemark>
 			<name>NN-005</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -197,20 +325,6 @@
 		<Placemark>
 			<name>NN-006</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -225,20 +339,6 @@
 		<Placemark>
 			<name>NN-007</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -253,20 +353,6 @@
 		<Placemark>
 			<name>NN-008</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -281,20 +367,6 @@
 		<Placemark>
 			<name>NN-009</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -309,20 +381,6 @@
 		<Placemark>
 			<name>NN-010</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -337,20 +395,6 @@
 		<Placemark>
 			<name>NN-011</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -365,20 +409,6 @@
 		<Placemark>
 			<name>NN-012</name>
 			<styleUrl>#pointStyleMap</styleUrl>
-			<Style id="inline">
-				<IconStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</IconStyle>
-				<LineStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</LineStyle>
-				<PolyStyle>
-					<color>ffffffff</color>
-					<colorMode>normal</colorMode>
-				</PolyStyle>
-			</Style>
 			<ExtendedData>
 				<SchemaData schemaUrl="#S_hptag_DDS">
 					<SimpleData name="long">107.574</SimpleData>
@@ -388,6 +418,122 @@
 			</ExtendedData>
 			<Point>
 				<coordinates>107.573775,-7.013125000000011,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>POLE</name>
+		<open>1</open>
+		<Placemark>
+			<name>A01</name>
+			<LookAt>
+				<longitude>107.5736825892179</longitude>
+				<latitude>-7.013107547065331</latitude>
+				<altitude>0</altitude>
+				<heading>3.170026606869543e-05</heading>
+				<tilt>0.05410361411268642</tilt>
+				<range>104.9346336872789</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_P</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5735795674912,-7.013101683152211,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>A02</name>
+			<LookAt>
+				<longitude>107.5739911153329</longitude>
+				<latitude>-7.013083566252345</latitude>
+				<altitude>0</altitude>
+				<heading>1.002388077835383e-05</heading>
+				<tilt>0.3146634993027139</tilt>
+				<range>118.8865574482922</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5738234657664,-7.013208053307879,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>A03</name>
+			<LookAt>
+				<longitude>107.5739911153329</longitude>
+				<latitude>-7.013083566252345</latitude>
+				<altitude>0</altitude>
+				<heading>1.002388077835383e-05</heading>
+				<tilt>0.3146634993027139</tilt>
+				<range>118.8865574482922</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5739345898241,-7.012915671445306,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>FDT</name>
+		<open>1</open>
+		<Placemark>
+			<name>FPSO01F27</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>107.5736825892179</longitude>
+				<latitude>-7.013107547065331</latitude>
+				<altitude>0</altitude>
+				<heading>3.170026606869543e-05</heading>
+				<tilt>0.05410361411268642</tilt>
+				<range>104.9346336872789</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5735795674912,-7.013101683152211,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>FAT</name>
+		<open>1</open>
+		<Placemark>
+			<name>S01A02</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>107.5739911153329</longitude>
+				<latitude>-7.013083566252345</latitude>
+				<altitude>0</altitude>
+				<heading>1.002388077835383e-05</heading>
+				<tilt>0.3146634993027139</tilt>
+				<range>118.8865574482922</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_triangle0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5739345898241,-7.012915671445306,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>S01A01</name>
+			<LookAt>
+				<longitude>107.5739911153329</longitude>
+				<latitude>-7.013083566252345</latitude>
+				<altitude>0</altitude>
+				<heading>1.002388077835383e-05</heading>
+				<tilt>0.3146634993027139</tilt>
+				<range>118.8865574482922</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_triangle</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>107.5738234657664,-7.013208053307879,0</coordinates>
 			</Point>
 		</Placemark>
 	</Folder>
