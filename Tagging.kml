@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Tagging</name>
+	<description>22/08/2024</description>
+	<Schema name="hptag" id="S_hptag_DDS">
+		<SimpleField type="double" name="long"><displayName>&lt;b&gt;long&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="lat"><displayName>&lt;b&gt;lat&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="desc"><displayName>&lt;b&gt;desc&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>long</b></td><td>$[hptag/long]</td></tr>
+  <tr><td><b>lat</b></td><td>$[hptag/lat]</td></tr>
+  <tr><td><b>desc</b></td><td>$[hptag/desc]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>long</b></td><td>$[hptag/long]</td></tr>
+  <tr><td><b>lat</b></td><td>$[hptag/lat]</td></tr>
+  <tr><td><b>desc</b></td><td>$[hptag/desc]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>HOMEPASS</name>
+		<open>1</open>
+		<Placemark>
+			<name>NN-001</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01318</SimpleData>
+					<SimpleData name="desc">NN-001</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573906,-7.013182999999994,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-002</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01314</SimpleData>
+					<SimpleData name="desc">NN-002</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573926,-7.013137000000005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-003</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01309</SimpleData>
+					<SimpleData name="desc">NN-003</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573941,-7.013091999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-004</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01305</SimpleData>
+					<SimpleData name="desc">NN-004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573963,-7.013051999999986,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-005</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01301</SimpleData>
+					<SimpleData name="desc">NN-005</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573969,-7.013012999999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-006</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01297</SimpleData>
+					<SimpleData name="desc">NN-006</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573985,-7.012968999999993,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-007</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01291</SimpleData>
+					<SimpleData name="desc">NN-007</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573844,-7.012905999999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-008</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01294</SimpleData>
+					<SimpleData name="desc">NN-008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573832,-7.012938999999989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-009</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01298</SimpleData>
+					<SimpleData name="desc">NN-009</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573815,-7.012982999999993,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-010</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01302</SimpleData>
+					<SimpleData name="desc">NN-010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573814,-7.013023000000005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-011</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01307</SimpleData>
+					<SimpleData name="desc">NN-011</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573798,-7.013065000000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-012</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_hptag_DDS">
+					<SimpleData name="long">107.574</SimpleData>
+					<SimpleData name="lat">-7.01312</SimpleData>
+					<SimpleData name="desc">NN-012</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573775,-7.013125000000011,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
