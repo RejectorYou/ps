@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PS</name>
+	<description>22/08/2024</description>
+	<Schema name="FAT" id="S_FAT_DDS">
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESC"><displayName>&lt;b&gt;DESC&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="FDT" id="S_FDT_DDS">
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESC"><displayName>&lt;b&gt;DESC&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="HOMEPASS" id="S_HOMEPASS_DDS">
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESC"><displayName>&lt;b&gt;DESC&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="POLE" id="S_POLE_DDS">
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESC"><displayName>&lt;b&gt;DESC&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[POLE/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[POLE/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[POLE/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[FDT/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[FDT/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[FDT/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="hlightPointStyle1">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[HOMEPASS/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[HOMEPASS/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[HOMEPASS/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle2">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[FAT/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[FAT/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[FAT/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[FAT/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[FAT/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[FAT/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[POLE/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[POLE/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[POLE/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/P-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="normPointStyle1">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[HOMEPASS/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[HOMEPASS/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[HOMEPASS/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle2">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>LONG</b></td><td>$[FDT/LONG]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[FDT/LAT]</td></tr>
+  <tr><td><b>DESC</b></td><td>$[FDT/DESC]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>HOMEPASS</name>
+		<Placemark>
+			<name>NN-001</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01318</SimpleData>
+					<SimpleData name="DESC">NN-001</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573906,-7.013181999999992,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-002</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01314</SimpleData>
+					<SimpleData name="DESC">NN-002</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573926,-7.013137000000005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-003</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01309</SimpleData>
+					<SimpleData name="DESC">NN-003</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573941,-7.013090999999996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-004</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01305</SimpleData>
+					<SimpleData name="DESC">NN-004</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573963,-7.013050999999983,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-005</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01301</SimpleData>
+					<SimpleData name="DESC">NN-005</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573969,-7.013011999999994,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-006</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01297</SimpleData>
+					<SimpleData name="DESC">NN-006</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573985,-7.012968000000011,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-007</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.0129</SimpleData>
+					<SimpleData name="DESC">NN-007</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573844,-7.012904999999994,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-008</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01294</SimpleData>
+					<SimpleData name="DESC">NN-008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573832,-7.012937999999986,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-009</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01298</SimpleData>
+					<SimpleData name="DESC">NN-009</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573815,-7.01298199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-010</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01302</SimpleData>
+					<SimpleData name="DESC">NN-010</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573814,-7.013023000000005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-011</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01307</SimpleData>
+					<SimpleData name="DESC">NN-011</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573798,-7.013065000000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NN-012</name>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_HOMEPASS_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01312</SimpleData>
+					<SimpleData name="DESC">NN-012</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573775,-7.013125000000011,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>POLE</name>
+		<Placemark>
+			<name>A01</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POLE_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.0131</SimpleData>
+					<SimpleData name="DESC">A01</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573579,-7.013101000000004,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>A02</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POLE_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01321</SimpleData>
+					<SimpleData name="DESC">A02</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573823,-7.013207999999985,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>A03</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POLE_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01291</SimpleData>
+					<SimpleData name="DESC">A03</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573934,-7.012915000000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>FDT</name>
+		<open>1</open>
+		<Placemark>
+			<name>FPSO01F27</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_FDT_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.0131</SimpleData>
+					<SimpleData name="DESC">FPSO01F27</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.5735795674912,-7.013101683152199,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>FAT</name>
+		<open>1</open>
+		<Placemark>
+			<name>S01A02</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_FAT_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01291</SimpleData>
+					<SimpleData name="DESC">S01A02</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573934,-7.012915000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>S01A01</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_FAT_DDS">
+					<SimpleData name="LONG">107.574</SimpleData>
+					<SimpleData name="LAT">-7.01321</SimpleData>
+					<SimpleData name="DESC">S01A01</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>107.573823,-7.013207999999985,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
