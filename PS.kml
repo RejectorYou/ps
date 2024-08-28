@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>PS</name>
+	<open>1</open>
 	<description>22/08/2024</description>
 	<Schema name="FAT" id="S_FAT_DDS">
 		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
@@ -48,8 +49,7 @@
   <tr><td><b>LONG</b></td><td>$[POLE/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[POLE/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[POLE/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
 		<ListStyle>
 			<ItemIcon>
@@ -70,11 +70,8 @@
   <tr><td><b>LONG</b></td><td>$[FDT/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[FDT/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[FDT/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
 	<Style id="hlightPointStyle1">
 		<IconStyle>
@@ -87,8 +84,7 @@
   <tr><td><b>LONG</b></td><td>$[HOMEPASS/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[HOMEPASS/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[HOMEPASS/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
 	</Style>
 	<Style id="hlightPointStyle2">
@@ -104,11 +100,8 @@
   <tr><td><b>LONG</b></td><td>$[FAT/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[FAT/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[FAT/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
 	<Style id="normPointStyle">
 		<IconStyle>
@@ -123,11 +116,8 @@
   <tr><td><b>LONG</b></td><td>$[FAT/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[FAT/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[FAT/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
 	<Style id="normPointStyle0">
 		<IconStyle>
@@ -142,8 +132,7 @@
   <tr><td><b>LONG</b></td><td>$[POLE/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[POLE/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[POLE/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
 		<ListStyle>
 			<ItemIcon>
@@ -162,8 +151,7 @@
   <tr><td><b>LONG</b></td><td>$[HOMEPASS/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[HOMEPASS/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[HOMEPASS/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
 	</Style>
 	<Style id="normPointStyle2">
@@ -179,11 +167,8 @@
   <tr><td><b>LONG</b></td><td>$[FDT/LONG]</td></tr>
   <tr><td><b>LAT</b></td><td>$[FDT/LAT]</td></tr>
   <tr><td><b>DESC</b></td><td>$[FDT/DESC]</td></tr>
-</table>
-]]></text>
+</table>]]></text>
 		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
 	<StyleMap id="pointStyleMap">
 		<Pair>
@@ -223,6 +208,28 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="style0">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="stylemap_id0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style0</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Folder id="layer 0">
@@ -657,6 +664,178 @@
 			<Point>
 				<coordinates>107.573823,-7.013207999999985,0</coordinates>
 			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>DROPWIRE</name>
+		<Placemark id="kml_2">
+			<name>kml_2</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573904191378,-7.01318085576258,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_3">
+			<name>kml_3</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573925807296,-7.013136970225069,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_4">
+			<name>kml_4</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573939559861,-7.01309207031241,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_5">
+			<name>kml_5</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573796983751,-7.013064020549369,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_6">
+			<name>kml_6</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573774807296,-7.01312497022501,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_7">
+			<name>kml_7</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573822728021,-7.013208717819529,0 107.573812410651,-7.013023788983981,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_8">
+			<name>kml_8</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573843807296,-7.01290497022499,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_9">
+			<name>kml_9</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573831807296,-7.012937970224971,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_10">
+			<name>kml_10</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573814332019,-7.01298232850559,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_11">
+			<name>kml_11</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573984807296,-7.012967970225069,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_12">
+			<name>kml_12</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573968807296,-7.01301197022506,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="kml_13">
+			<name>kml_13</name>
+			<Style>
+				<LineStyle>
+					<color>ffff00ff</color>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>
+					107.573933999961,-7.01291499999062,0 107.573962807296,-7.013050970225049,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>LINE</name>
+		<open>1</open>
+		<Placemark id="kml_1">
+			<name>kml_1</name>
+			<styleUrl>#stylemap_id0</styleUrl>
+			<LineString>
+				<coordinates>
+					107.573578999963,-7.01310099999036,0 107.573822999963,-7.013207999990339,0 107.573933999963,-7.01291499999035,0 
+				</coordinates>
+			</LineString>
 		</Placemark>
 	</Folder>
 </Document>
